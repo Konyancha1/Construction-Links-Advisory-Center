@@ -5,7 +5,8 @@ import {
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
-import skyline from '../assets/78786.svg'; 
+import skyline from '../assets/78786.svg';
+import logo from '../assets/logo.png';
 
 export const RootRoute = createRootRoute({
   component: () => {
@@ -22,9 +23,11 @@ export const RootRoute = createRootRoute({
         >
           <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <span className="text-xl sm:text-2xl font-bold text-blue-600">
-                Construction Links
-              </span>
+              <img
+                src={logo}
+                alt="Construction Links Logo"
+                className="h-16 w-auto"
+              />
             </div>
 
             <nav className="hidden md:flex space-x-6 text-sm font-medium">
@@ -35,7 +38,7 @@ export const RootRoute = createRootRoute({
             </nav>
 
             <div className="lg:hidden flex items-center gap-4">
-              <button onClick={toggleMenu} className="md:hidden text-blue-600">
+              <button onClick={toggleMenu} className="md:hidden text-blue-800">
                 {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
               </button>
             </div>
@@ -98,7 +101,7 @@ const NavLink = ({ href, label, Icon }: any) => {
     <motion.a
       href={href}
       className={`flex items-center gap-2 transition relative py-1 ${
-        isActive ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'
+        isActive ? 'text-blue-900' : 'text-gray-700 hover:text-blue-900'
       }`}
       whileHover={{ scale: 1.05 }}
     >
@@ -107,7 +110,7 @@ const NavLink = ({ href, label, Icon }: any) => {
       {isActive && (
         <motion.div
           layoutId="underline"
-          className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-600"
+          className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-900"
         />
       )}
     </motion.a>
@@ -117,7 +120,7 @@ const NavLink = ({ href, label, Icon }: any) => {
 const MobileNavLink = ({ href, label, Icon }: any) => (
   <motion.a
     href={href}
-    className="flex items-center gap-3 text-gray-800 hover:text-blue-600 transition text-base"
+    className="flex items-center gap-3 text-gray-800 hover:text-blue-900 transition text-base"
     whileHover={{ scale: 1.05 }}
   >
     <Icon size={20} />

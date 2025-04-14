@@ -20,7 +20,7 @@ function About() {
         <meta name="description" content="Learn about our mission to simplify construction and real estate in Kenya through a unified platform." />
       </Helmet>
       
-      <section className="relative bg-blue-600 text-white py-24 px-8">
+      <section className="relative bg-blue-900 text-white py-24 px-8">
         <div className="absolute inset-0 bg-cover bg-center opacity-50" style={{ backgroundImage: `url(${hero})` }} />
         <div className="relative z-10 text-center">
           <h2 className="text-4xl font-bold mb-4">Transforming Construction and Real Estate in Kenya</h2>

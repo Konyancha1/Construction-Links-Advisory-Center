@@ -18,14 +18,14 @@ function Home() {
       </Helmet>
 
       <section className="text-center py-20 bg-blue-50">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
           Building Kenya’s Future, One Project at a Time
         </h1>
         <p className="text-gray-700 max-w-xl mx-auto text-lg">
           Your trusted partner in construction, real estate management, and equipment supply.
         </p>
         <div className="mt-6">
-          <a href="/services" className="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
+          <a href="/services" className="bg-blue-900 text-white px-6 py-3 rounded-xl hover:bg-blue-600 transition">
             Explore Our Services
           </a>
         </div>
@@ -52,10 +52,10 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-blue-600 text-white py-16 text-center">
+      <section className="bg-blue-900 text-white py-16 text-center">
         <h3 className="text-2xl font-semibold mb-4">Let’s Build Something Great Together</h3>
         <p className="mb-6">Contact us today and take the first step toward your next successful project.</p>
-        <a href="/contact" className="bg-white text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-100 transition">
+        <a href="/contact" className="bg-white text-blue-900 px-6 py-3 rounded-xl hover:bg-blue-100 transition">
           Contact Us
         </a>
       </section>

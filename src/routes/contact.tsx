@@ -20,12 +20,12 @@ function Contact() {
             <div className="max-w-2xl mx-auto">
                 <div className="border-t-1 border-b-1 border-gray-900 py-8">
                     <div className="text-center">
-                        <h3 className="text-2xl font-semibold text-blue-700 mb-6">Get In Touch</h3>
+                        <h3 className="text-2xl font-semibold text-blue-900 mb-6">Get In Touch</h3>
                         <div className="space-y-6 mb-6">
                             <div className="flex justify-center items-center space-x-4">
                                 <div>
                                     <p className="text-gray-700 text-lg">
-                                        <strong>Email:</strong> <a href="mailto:info@constructionlinks.co.ke" className="text-blue-600">info@constructionlinks.co.ke</a>
+                                        <strong>Email:</strong> <a href="mailto:info@constructionlinks.co.ke" className="text-gray-700">info@constructionlinks.co.ke</a>
                                     </p>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@ function Contact() {
                             <div className="flex justify-center items-center space-x-4">
                                 <div>
                                     <p className="text-gray-700 text-lg">
-                                        <strong>Call:</strong> <a href="tel:+254123456789" className="text-blue-600">(+254) 722 706 705</a>
+                                        <strong>Call:</strong> <a href="tel:+254123456789" className="text-gray-700">(+254) 722 706 705</a>
                                     </p>
                                 </div>
                             </div>

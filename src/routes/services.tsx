@@ -20,7 +20,7 @@ function Services() {
       </Helmet>
 
 
-      <section className="relative bg-blue-600 text-white py-24 px-8">
+      <section className="relative bg-blue-900 text-white py-24 px-8">
         <div className="absolute inset-0 bg-cover bg-center opacity-50" style={{ backgroundImage: `url(${hero})` }} />
         <div className="relative z-10 text-center">
           <h2 className="text-4xl font-bold mb-4">Our Services</h2>
@@ -106,10 +106,10 @@ function Services() {
         </div>
       </section>
 
-      <section className="py-16 px-8 bg-blue-600 text-white text-center">
+      <section className="py-16 px-8 bg-blue-900 text-white text-center">
         <h3 className="text-3xl font-semibold mb-4">Ready to Get Started?</h3>
         <p className="text-lg mb-6">Contact us today to discuss your construction and real estate needs. Our team is ready to help you succeed.</p>
-        <button className="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-blue-700 hover:text-white transition">
+        <button className="bg-white text-blue-900 px-6 py-3 rounded-full hover:bg-blue-700 hover:text-white transition">
           Contact Us
         </button>
       </section>
