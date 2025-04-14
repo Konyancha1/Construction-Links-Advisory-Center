@@ -109,9 +109,9 @@ function Services() {
       <section className="py-16 px-8 bg-blue-900 text-white text-center">
         <h3 className="text-3xl font-semibold mb-4">Ready to Get Started?</h3>
         <p className="text-lg mb-6">Contact us today to discuss your construction and real estate needs. Our team is ready to help you succeed.</p>
-        <button className="bg-white text-blue-900 px-6 py-3 rounded-full hover:bg-blue-700 hover:text-white transition">
+        <a href="/contact" className="bg-white text-blue-900 px-6 py-3 rounded-xl hover:bg-blue-100 transition">
           Contact Us
-        </button>
+        </a>
       </section>
     </>
   );
