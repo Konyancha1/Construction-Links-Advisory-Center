@@ -1,7 +1,13 @@
 import { Outlet, createRootRoute } from '@tanstack/react-router'
 import {
-  Home, Info, Hammer, Menu, X, Facebook, Twitter, Linkedin, Phone
-} from 'lucide-react'
+  Home, Info, Hammer, Menu, X, Phone } from 'lucide-react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
@@ -79,10 +85,40 @@ export const RootRoute = createRootRoute({
             className="absolute inset-x-0 top-0 h-60 bg-no-repeat bg-top bg-contain opacity-100 pointer-events-none"
             style={{ backgroundImage: `url(${skyline})` }}
           ></div>
+
           <div className="relative z-10 flex justify-center gap-6 mb-4 text-lg">
-            <SocialLink href="https://facebook.com" Icon={Facebook} />
-            <SocialLink href="https://twitter.com" Icon={Twitter} />
-            <SocialLink href="https://linkedin.com" Icon={Linkedin} />
+            <a
+              href="https://www.facebook.com/constructionlinksadvisorycenter"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <FontAwesomeIcon icon={faFacebookF} className="text-white hover:text-blue-500" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/constructionlinksadvisorycenter"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} className="text-white hover:text-blue-300" />
+            </a>
+            <a
+              href="https://www.instagram.com/constructionlinksadvisorycenter"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FontAwesomeIcon icon={faInstagram} className="text-white hover:text-pink-400" />
+            </a>
+            <a
+              href="https://wa.me/254722105801"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <FontAwesomeIcon icon={faWhatsapp} className="text-white hover:text-green-400" />
+            </a>
           </div>
 
           <p className="relative z-10 text-center text-sm text-gray-400">
@@ -126,15 +162,4 @@ const MobileNavLink = ({ href, label, Icon }: any) => (
     <Icon size={20} />
     <span>{label}</span>
   </motion.a>
-)
-
-const SocialLink = ({ href, Icon }: any) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-blue-400 transition"
-  >
-    <Icon size={20} />
-  </a>
 )
